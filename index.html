@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2057223-42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2057223-42');
+</script>
+		<script>
+//			if((self.parent&&!(self.parent===self))&&(self.parent.frames.length!=0)){self.parent.location=document.location}
+		</script>
+
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<script>
+		if (document.referrer) 
+		{
+			url = document.referrer; 
+			ref = url.match(/:\/\/(.[^/]+)/)[1];
+			document.write('<title>'+url+'</title>');
+		} else document.write('<title>no url</title>');
+		</script>
+		<script src="https://2spn.github.io/c/player.js?ver=6" type="text/javascript"></script>
+		<style>
+			::-webkit-scrollbar { width: 0;}
+			html, body, #player{width:100%; height:100%; margin:0; padding:0}
+			#player {background: #000 url(loading.gif) no-repeat center; max-height:100%}
+			#player {overflow: scroll} 
+			
+			div.newWin {display: table;height:100%; width:100%; float:left;background:black}
+			div.newLink {display:table-cell;vertical-align: middle;text-align:center;}
+			div.newLink a {color:white; font-size: 160%;text-decoration:none; border-bottom:dotted 1px white}
+			div.newLink a:hover {color:green;border-bottom:dotted 1px green}
+			tg {display:inline-block;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
+		</style>
+		<script>
+			function $_GET(key) 
+			{
+				var p = window.location.search;
+				p = p.match(new RegExp(key + '=([^&=]+)'));
+				return p ? p[1] : false;
+			}
+
+			if (!$_GET('autoplay')) $autoPlay=0
+			else $autoPlay=$_GET('autoplay');
+			
+			jQuery(document).ready(function($)
+			{
+				$( window ).resize(function() {
+					resize_info();
+				});
+			});
+
+			function resize_info()
+			{
+				(function($) {
+					window.scroll(0,document.documentElement.offsetHeight);
+				})(jQuery);
+			}
+			setTimeout('window.scroll(0,document.documentElement.offsetHeight)', 15001);
+			setTimeout('window.scroll(0,document.documentElement.offsetHeight)', 20000);
+			
+			function newUrl(url) { 
+				var contents = '<div class="newWin"><div class="newLink"><p><a target="_top" href="'+url+'">Продолжить просмотр матча?</a></p><p><a href="https://t.me/joinchat/aqfBpw6y9505ZDQy"><tg>&#x27A4</tg>@WCup</a></p></div></center>';
+				document.getElementById('preroll').innerHTML=contents; player.api("stop"); setTimeout(function() {top.location.href = url;}, 10000);
+			}
+
+		</script>
+	</head>
+	<body><!--LiveInternet counter--><div style="display:none"><script type="text/javascript">
+document.write("<a href='//www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+rrrrrr
+";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+</script></div><!--/LiveInternet-->
+
+		<div id="preroll" style="width:100%;height:100%"></div>
+
+		<script>
+			var player = new Playerjs({id:"preroll", "url":"https://11on.github.io/0/?id="+$_GET('id'), embed:"https://11on.github.io/0/?id="+$_GET('id'), file:"//fe.spon.in/"+$_GET('id')+".m3u8", ratio:"16/9", autoplay:$autoPlay, "default_quality":"240p"});
+		</script>
+
+<script data-cfasync='false'>
+
+    (function(w,d,o,g,r,a,m){
+        var cid=(Math.random()*1e17).toString(36);d.write('<div id="'+cid+'"></div>');
+        w[r]=w[r]||function(){(w[r+'l']=w[r+'l']||[]).push(arguments)};
+        function e(b,w,r){if((w[r+'h']=b.pop())&&!w.ABN){
+            var a=d.createElement(o),p=d.getElementsByTagName(o)[0];a.async=1;a.setAttribute('data-cfasync','false');
+            a.src='//cdn.'+w[r+'h']+'/libs/e.js';a.onerror=function(){e(g,w,r)};
+            p.parentNode.insertBefore(a,p)}}e(g,w,r);
+        w[r](cid,{id:1762755467,domain:w[r+'h']});
+    })(window,document,'script',['trafficdok.com'],'ABNS');
+
+</script>
+				
+<script>
+		var dopAdv=false;
+			if (document.referrer) 
+			{
+				if (!ref.includes('up.on') && !ref.includes('on.live') && !ref.includes('on.es')) dopAdv=true;
+			} else dopAdv=true;
+
+//			if (dopAdv) setTimeout('newUrl("https://x.afu.su/-")',330000);
+		</script>
+	</body>
+</html>

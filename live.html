@@ -25,7 +25,6 @@
 			document.write('<title>'+url+'</title>');
 		} else document.write('<title>no url</title>');
 		</script>
-		<script src="https://2spn.github.io/c/player.js?ver=6" type="text/javascript"></script>
 		<style>
 			::-webkit-scrollbar { width: 0;}
 			html, body, #player{width:100%; height:100%; margin:0; padding:0}
@@ -39,15 +38,7 @@
 			tg {display:inline-block;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);transform: rotate(-45deg);}
 		</style>
 		<script>
-			function $_GET(key) 
-			{
-				var p = window.location.search;
-				p = p.match(new RegExp(key + '=([^&=]+)'));
-				return p ? p[1] : false;
-			}
 
-			if (!$_GET('autoplay')) $autoPlay=0
-			else $autoPlay=$_GET('autoplay');
 			
 			jQuery(document).ready(function($)
 			{
@@ -97,7 +88,7 @@
 				if (!ref.includes('tv.xy') && !ref.includes('up.on') && !ref.includes('on.live') && !ref.includes('on.es')) dopAdv=true;
 			} else dopAdv=true;
 
-			if (dopAdv) setTimeout('newUrl("https://v.cnl.su/-")',330000);
+			if (dopAdv) setTimeout('newUrl("https://v.cnl.su/-")',660000);
 		</script>
 
 <!--LiveInternet counter--><div style="display:none"><script type="text/javascript">
